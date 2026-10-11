@@ -1,0 +1,8 @@
+references:
+  - "https://en.wikipedia.org/wiki/Hyundai_i40"
+
+generations:
+  - name: "First Generation (VF)"
+    start_year: 2011
+    end_year: 2019
+    description: "The i40 is a mid-size sedan and wagon built on the platform of the sixth-generation Sonata and the Kia Optima, sold mainly in Europe, Korea and Australia with 1.6 and 2.0 gasoline and 1.7 diesel engines."
