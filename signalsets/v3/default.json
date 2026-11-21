@@ -6,7 +6,7 @@
     {"id": "I40_ODO_KM",          "path": "Trips",      "fmt": {"bix": 48, "len": 24, "max": 16777215,                                "unit": "kilometers" }, "name": "Odometer, metric",   "suggestedMetric": "odometer"},
     {"id": "I40_ODO_MI",          "path": "Trips",      "fmt": {"bix": 72, "len": 24, "max": 16777215,                                "unit": "miles"      }, "name": "Odometer, imperial", "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7D1", "rax": "7D9", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
+{ "hdr": "7D1", "rax": "7D9", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_FL_VSS", "path": "Movement", "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front left wheel speed"},
     {"id": "I40_FR_VSS", "path": "Movement", "fmt": {"bix": 96,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Front right wheel speed"},
@@ -38,7 +38,7 @@
     {"id": "I40_RL_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 104, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear left wheel speed"},
     {"id": "I40_RR_WHEEL_VSS", "path": "Tires", "fmt": {"bix": 112, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Rear right wheel speed"}
   ]},
-{ "hdr": "7D4", "rax": "7DC", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
+{ "hdr": "7D4", "rax": "7DC", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_STEER_ANGLE_V2", "path": "Control", "fmt": {"bix": 24, "len": 16, "max": 3276.7, "min": -3276.8, "mul": 10, "div": 100, "sign": true, "unit": "degrees" }, "name": "Steering angle"}
   ]},
@@ -65,7 +65,7 @@
     {"id": "I40_WG_POS",  "path": "Engine", "fmt": {"bix": 424, "len": 16, "max": 199.99,   "min": -200, "mul": 0.00610352,  "sign": true, "nullmin": -200, "unit": "percent"    }, "name": "Waste gate position"},
     {"id": "I40_WG_SP",   "path": "Engine", "fmt": {"bix": 440, "len": 16, "max": 199.99,   "min": -200, "mul": 0.00610352,  "sign": true, "nullmin": -200, "unit": "percent"    }, "name": "Waste gate set point"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "00"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "00"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_FUEL_CUT",               "path": "Fuel",     "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel cut"},
     {"id": "I40_IDLE_CONTROL_MODE",      "path": "Engine",   "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle control mode"},
@@ -73,7 +73,7 @@
     {"id": "I40_COOLANT_FAN_HIGH_SPEED", "path": "Movement", "fmt": {"bix": 171, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan high speed"},
     {"id": "I40_KNOCK_DETECTED",         "path": "Engine",   "fmt": {"bix": 200, "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock detected"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_CONTROL_MODULE_VOLTAGE",                "path": "Battery",  "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                                   "unit": "volts"   },                   "name": "Control module voltage"},
     {"id": "I40_CONTROL_MODULE_VOLTAGE_AFTER_IGNITION", "path": "Battery",  "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                                   "unit": "volts"   },                   "name": "Control module voltage after ignition"},
@@ -87,7 +87,7 @@
     {"id": "I40_INTAKE_AIR_T",                          "path": "Engine",   "fmt": {"bix": 264, "len": 8,  "max": 143.25, "min": -48,      "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Intake air temperature",                "suggestedMetric": "intakeAirTemperature"},
     {"id": "I40_ENGINE_OIL_T",                          "path": "Engine",   "fmt": {"bix": 272, "len": 8,  "max": 143.25, "min": -48,      "mul": 0.75,                      "add": -48, "unit": "celsius" },                   "name": "Engine oil temperature"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "02"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "02"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_OXYGEN_SENSOR_11",            "path": "ECU",      "fmt": {"bix": 32,  "len": 8,  "max": 1.1285,  "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 1 bank 1"},
     {"id": "I40_OXYGEN_SENSOR_21",            "path": "ECU",      "fmt": {"bix": 48,  "len": 8,  "max": 1.1285,  "min": -0.2,      "mul": 0.00521,                 "add": -0.2, "unit": "volts"             },                     "name": "Oxygen sensor 2 bank 1"},
@@ -98,23 +98,23 @@
     {"id": "I40_FUEL_INJECTION_TIMING_3",     "path": "Fuel",     "fmt": {"bix": 208, "len": 16, "blsb": true,   "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #3"},
     {"id": "I40_FUEL_INJECTION_TIMING_4",     "path": "Fuel",     "fmt": {"bix": 224, "len": 16, "blsb": true,   "max": 53686.272,                  "mul": 0.8192,                                          "unit": "milliseconds" },                                     "name": "Fuel injection timing #4"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "03"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "03"}, "freq": 5, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_EXHAUST_GAS_T",                 "path": "Engine", "fmt": {"bix": 368, "len": 8,  "max": 1300,    "min": 99, "mul": 4.709803922,              "add": 99, "unit": "celsius"    }, "name": "Exhaust gas temperature"},
     {"id": "I40_ODO_LAST_DPF_REGEN",            "path": "Trips",  "fmt": {"bix": 392, "len": 32, "max": 4294967,                                "div": 1000,            "unit": "kilometers" }, "name": "Odometer at last DPF regeneration"},
     {"id": "I40_DISTANCE_SINCE_LAST_DPF_REGEN", "path": "Trips",  "fmt": {"bix": 424, "len": 32, "max": 4294967,                                "div": 1000,            "unit": "kilometers" }, "name": "Distance since last DPF regeneration"},
     {"id": "I40_ODO",                           "path": "Trips",  "fmt": {"bix": 456, "len": 32, "max": 4294967,                                "div": 1000,            "unit": "kilometers" }, "name": "Odometer",                             "suggestedMetric": "odometer"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "04"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "04"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_COOLANT_FAN_HIGH_SPEED_1_8", "path": "Movement", "fmt": {"bix": 109, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan high speed, 1.8"},
     {"id": "I40_COOLANT_FAN_LOW_SPEED_1_8",  "path": "Movement", "fmt": {"bix": 110, "len": 1, "max": 1, "unit": "offon" }, "name": "Coolant fan low speed, 1.8"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "05"}, "freq": 0.25,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "05"}, "freq": 0.25, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_TQ_ACT", "path": "Engine", "fmt": {"bix": 64, "len": 16, "blsb": true, "max": 99.94, "mul": 61, "div": 40000, "unit": "percent" }, "name": "Torque, actual"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "06"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "06"}, "freq": 5, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_DPF_REGENERATION_STATE",         "path": "Engine",  "fmt": {"bix": 207, "len": 1,  "max": 1,                                                                                   "unit": "offon"   },                "name": "Diesel particulate filter regeneration state"},
     {"id": "I40_BAT_CURRENT_BATSENS_7E0_7E0_06", "path": "Battery", "fmt": {"bix": 736, "len": 16, "blsb": true, "max": 2047.9375, "min": -2048,                  "div": 16,     "sign": true,                   "unit": "amps"    },                                                      "name": "Battery current, battery sensor"},
@@ -122,13 +122,13 @@
     {"id": "I40_BAT_T_BATSENS_7E0_7E0_06",       "path": "Battery", "fmt": {"bix": 768, "len": 16, "blsb": true, "max": 255.9758,  "min": -255.9836, "mul": 1953, "div": 250000, "sign": true,                   "unit": "celsius" },                                                      "name": "Battery temperature, battery sensor"},
     {"id": "I40_BAT_ST_CHG_BATSENS_7E0_7E0_06",  "path": "Battery", "fmt": {"bix": 784, "len": 8,  "max": 100,                     "mul": 20,        "div": 51,                                "unit": "percent" },                "name": "Battery state of charge, battery sensor"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "07"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "07"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_MAIN_INJECTION_QTY",  "path": "Engine", "fmt": {"bix": 96,  "len": 8,  "max": 100,   "mul": 0.392156863, "unit": "liters" }, "name": "Main injection volume"},
     {"id": "I40_PILOT_INJECTION_QTY", "path": "Engine", "fmt": {"bix": 104, "len": 16, "max": 65535,                     "unit": "liters" }, "name": "Pilot injection volume"},
     {"id": "I40_POST_INJECTION_QTY",  "path": "Engine", "fmt": {"bix": 128, "len": 16, "max": 65535,                     "unit": "liters" }, "name": "Post injection volume"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "08"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "08"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_EMIS_MIS_TOT_1",     "path": "Engine", "fmt": {"bix": 128, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 1"},
     {"id": "I40_EMIS_MIS_TOT_2",     "path": "Engine", "fmt": {"bix": 144, "len": 16, "blsb": true, "max": 65535,                  "unit": "scalar" },                                      "name": "Emission relevant misfires total, cylinder 2"},
@@ -152,14 +152,14 @@
     {"id": "I40_MIS_CURRENT_6",      "path": "Engine", "fmt": {"bix": 576, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current, cylinder 6"},
     {"id": "I40_MIS_CURRENT_TOT",    "path": "Engine", "fmt": {"bix": 584, "len": 8,  "max": 255,                 "unit": "scalar" },               "name": "Misfires current total"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0A"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0A"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_KNOCK_RETARD_CYL_1_ALT", "path": "Engine", "fmt": {"bix": 160, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 1, alternate"},
     {"id": "I40_KNOCK_RETARD_CYL_2_ALT", "path": "Engine", "fmt": {"bix": 168, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 2, alternate"},
     {"id": "I40_KNOCK_RETARD_CYL_3_ALT", "path": "Engine", "fmt": {"bix": 176, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 3, alternate"},
     {"id": "I40_KNOCK_RETARD_CYL_4_ALT", "path": "Engine", "fmt": {"bix": 184, "len": 8, "max": 191.25, "div": 1.3333333333, "unit": "degrees" }, "name": "Knock retard cylinder 4, alternate"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0B"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0B"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_DI_TIME_1", "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 1"},
     {"id": "I40_DI_TIME_2", "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 2"},
@@ -168,7 +168,7 @@
     {"id": "I40_DI_TIME_5", "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 5"},
     {"id": "I40_DI_TIME_6", "path": "Engine", "fmt": {"bix": 112, "len": 16, "blsb": true, "max": 500, "mul": 100, "div": 13107, "unit": "milliseconds" }, "name": "Direct injection time 6"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0D"}, "freq": 1,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0D"}, "freq": 1, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_MIS_CNT_EMIS_1", "path": "Engine.Misfires", "fmt": {"bix": 48,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #1"},
     {"id": "I40_MIS_CNT_EMIS_2", "path": "Engine.Misfires", "fmt": {"bix": 64,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Emission-relevant misfires, cylinder #2"},
@@ -180,7 +180,7 @@
     {"id": "I40_MIS_CNT_4",      "path": "Engine.Misfires", "fmt": {"bix": 224, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, cylinder #4"},
     {"id": "I40_MIS_CNT_ALL",    "path": "Engine.Misfires", "fmt": {"bix": 432, "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfires total counter, all cylinders"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0E"}, "freq": 30,
+{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "0E"}, "freq": 30, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_ENG_RUN_TIME_TOT", "path": "Engine", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 393209.9999, "mul": 6, "unit": "minutes" }, "name": "Engine run time, total"}
   ]},
@@ -550,7 +550,7 @@
   "signals": [
     {"id": "I40_TOT_SULFUR_MASS", "path": "Engine", "fmt": { "len": 16, "max": 9999, "mul": 15259, "div": 100000, "unit": "unknown" }, "name": "Total sulfur mass"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "A0"}, "freq": 0.25,
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"21": "A0"}, "freq": 0.25, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_ENGINE_RPM_TCM",        "path": "Engine",       "fmt": {"bix": 32,  "len": 16, "max": 16383.75,                          "div": 4,                "unit": "rpm"               }, "name": "Engine RPM"},
     {"id": "I40_VEHICLE_SPEED",         "path": "Movement",     "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                            "suggestedMetric": "speed"},
@@ -563,7 +563,7 @@
     {"id": "I40_COMMANDED_GEAR",        "path": "Transmission", "fmt": {"bix": 176, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Commanded gear"},
     {"id": "I40_BRAKE_PEDAL",           "path": "Control",      "fmt": {"bix": 192, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Brake pedal"}
   ]},
-{ "hdr": "7E1", "rax": "7E9", "dbg": true, "cmd": {"21": "A1"}, "freq": 0.25,
+{ "hdr": "7E1", "rax": "7E9", "cmd": {"21": "A1"}, "freq": 0.25, "dbgfilter": { "to": 2016, "from": 2018 },
   "signals": [
     {"id": "I40_CURRENT_GEAR_7E1_2", "path": "Transmission", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
   ]},
